@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2ca800ef538c54baa78347a56b4693, type: 3}
+  m_Name: TestInventory
+  m_EditorClassIdentifier: 
+  inventory:
+  - item: {fileID: 11400000, guid: 0abaacac099630346abbef6f105d9f63, type: 2}
+    isEquipped: 1
+    isLeftSide: 1
+  - item: {fileID: 11400000, guid: 613c7f90aa3f6c24fad124f805304cc0, type: 2}
+    isEquipped: 1
+    isLeftSide: 0
+  - item: {fileID: 11400000, guid: 363e78ec67d23fb4d9800ecf3de55ea4, type: 2}
+    isEquipped: 0
+    isLeftSide: 0
+  - item: {fileID: 11400000, guid: 4b5cadf624808064fab3bcadb5938a4c, type: 2}
+    isEquipped: 0
+    isLeftSide: 0
+  - item: {fileID: 11400000, guid: 6aa8dd6970faa194eb44eae7163b2795, type: 2}
+    isEquipped: 0
+    isLeftSide: 0
