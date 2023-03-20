@@ -5,7 +5,7 @@ Unity: 2021.1.0f1
 
 <img src="documentation/demoImg.png"  width="720">
 
-video version without item display values
+[video version without item display values](documentation/demo.mp4)
 
 <video width="720" controls>
   <source src="documentation/demo.mp4" type="video/mp4">
