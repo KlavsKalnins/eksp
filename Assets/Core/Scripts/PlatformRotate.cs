@@ -15,11 +15,6 @@ public class PlatformRotate : MonoBehaviour
     [SerializeField] Transform _rotationTargetObject;
     [SerializeField] RectTransform _rotationArea;
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         if (Input.GetMouseButtonUp(0))
