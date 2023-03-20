@@ -1,7 +1,9 @@
 # eksp
 Unity: 2021.1.0f1
+
 6-7 hours of progress
 
+[Video Demo](~/readme/demo.mp4)
 
 <video width="720" controls>
   <source src="~/readme/demo.mp4" type="video/mp4">
@@ -25,4 +27,3 @@ Unity: 2021.1.0f1
 - Arhitecture might not be the best as it can be repetitive implementing UnityActions for the display of player equipment
 - didn't add armor and accessory items
 - Flaw or pro but you cannot have the same item in the inventory, just like a block in a blockchain it should be unique - items has Guid
-
