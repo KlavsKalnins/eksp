@@ -32,6 +32,18 @@ public class PlayerStorage : MonoBehaviour
         EvaluateStats();
     }
 
+    private void SaveInventoryItemState(Item item, bool isEquipped, bool isLeftSide)
+    {
+        for(int i = 0; i < inventory.inventory.Length; i++)
+        {
+            if (inventory.inventory[i].item.id == item.id)
+            {
+                inventory.inventory[i].isLeftSide = isLeftSide;
+                inventory.inventory[i].isEquipped = isEquipped;
+            }
+        }
+    }
+
     private void SetupInventory()
     {
         inventory.inventory.ToList().ForEach(i => SpawnSocket(i));
@@ -97,6 +109,7 @@ public class PlayerStorage : MonoBehaviour
     private void UnequipEquipment(EquipmentSocket equipmentSocket)
     {
         equipmentSocket.socket.socketStateType = SocketStateType.Unequipped;
+        SaveInventoryItemState(equipmentSocket.socket.item, false, false);
         equipmentSocket.socket.transform.SetParent(_backpack);
         equipmentSocket.socket = null;
         UpdateDisplayAvatar(equipmentSocket);
@@ -107,6 +120,7 @@ public class PlayerStorage : MonoBehaviour
     {
         item.socketStateType = SocketStateType.Equipped;
         equipmentSocket.socket = item;
+        SaveInventoryItemState(equipmentSocket.socket.item, true, equipmentSocket.isLeftHandSocket);
         equipmentSocket.socket.transform.SetParent(equipmentSocket._equipmentSocket);
         UpdateDisplayAvatar(equipmentSocket);
         EvaluateStats();

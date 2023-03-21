@@ -27,6 +27,7 @@ Unity: 2021.1.0f1
 
 ## Flaws
 
+- Didnt make that it saves to persistant storage so it will work only in the Editor
 - Arhitecture might not be the best as it can be repetitive implementing UnityActions for the display of player equipment
 - Script naming should be better
 - didn't add armor and accessory items (but there is weapons and Helmet which have the 96% same code)
